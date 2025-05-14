@@ -8,15 +8,18 @@
   <body style="margin: 0; overflow: hidden">
     <a-scene embedded arjs>
       <!-- Marker -->
-      <a-marker type="pattern" url="assets/markers/planet-marker.patt">
+      <a-marker type="pattern" url="assets/marker/planet-marker.patt">
         <!-- Model Planet -->
         <a-entity
-          gltf-model="https://drive.google.com/uc?export=download&id=1GMx5AM6xKSV3NtI2dqeBcWAgJub3BPXL"
+          gltf-model="assets/models/planet.glb"
           scale="0.5 0.5 0.5"
           position="0 0 0"
-        >
-        </a-entity>
+        ></a-entity>
       </a-marker>
+
+      <!-- Tambahkan cahaya -->
+      <a-light type="ambient" color="#ffffff"></a-light>
+
       <a-entity camera></a-entity>
     </a-scene>
   </body>
